@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="./reset.css">
+<link rel="stylesheet" type="text/css" href="./base.css">
+<link rel="stylesheet" type="text/css" href="./layout.css">
+<link rel="stylesheet" type="text/css" href="./common.css">
+<link rel="stylesheet" type="text/css" href="./mod-cont.css">
+<link rel="stylesheet" type="text/css" href="./mod-navi2.css">
+<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+<title>APIサンプル</title>
+</head>
+<body>
+	<div class="header">
+		<div class="inbox">
+			<p class="logo">
+			<a href="/"><img width="130" height="60" alt="HOME&#39;s" src="../img/logo_homes.png"></a>
+			</p>
+		</div>
+	</div>
+
+	<div class="main">
+
+		<div class="container">
+
+			<div class="navigation cf">
+
+				<div class="doc-title">
+					<h1 class="title-name">PUBLIC API</h1>
+					<p class="title-sub">DOCUMENTATION</p>
+				</div>
+
+					<ul class="category">
+						<li><a href="../main2.html">/master/code/mcf</a></li>
+						<li><a href="../main3.html">/master/code/mcf</a></li>
+						<li><a href="../main4.html">/master/code/mbg</a></li>
+						<li><a href="main5.html">/master/code/mbg</a></li>
+					</ul>
+
+				<p class="kiyaku"><a href="#">ご利用規約</a></p>
+
+			</div>
+
+			<div class="contents cf">
+				<p class="test">sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</p>
+				<p class="test2">sssssあああああああああああああ亜あああああああああああああああああああsssssあああああああああああああ亜あああああああああああああsssssあああああああああああああ亜あああああああああああああ</p>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="inbox cf">
+			<p class="company cf"><img width="133" height="55" alt="株式会社ネクスト" src="../img/logo_next.png"></p>
+			<p class="copyright cf">Copyright&copy;&nbsp;NEXT&nbsp;CO.,LTD.&nbsp;All&nbsp;Rights&nbsp;Reserved.</p>
+		</div>
+	</div>
+	<!-- wrapper -->
+<script>
+$(function(){
+    var url = $(location).attr('href');
+    var url_sp = url.split("");
+    var file = url_sp[url_sp.length - 1];
+    $('.category').find('a').each(function(){
+        var link = $(this).attr('href');
+        if(link == file){
+            $(this).addClass('on');
+        }
+    });
+});
+</script>
+</body>
+
+</html>

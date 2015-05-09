@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/* --------------------------------------------------- *
+共通部分
+----------------------------------------------------- */
+
+/* ヘッダー*/
+
+/* コンテンツ全体------------------------------------------*/
+.main{
+  background: linear-gradient(to right, #445966 0%, #445966 50%, #eff5f6 50%, #eff5f6 100%);
+}
+
+.container{
+  background-color: #eff5f6;
+  min-height: 960px;
+  overflow:hidden; /*左カラムをﾒｲﾝｺﾝﾃﾝﾂに合わせて伸ばし、そこからはみ出た分を隠すため*/
+}
+
+/* フッター-------------------------------------------------------*/
+.footer{
+  border: solid 2px seagreen;
+}
+.company{
+  float: left;
+}
+.copyright{
+  float: right;
+}
+
+/*micro clearfix-------------------------------------------------------*/
+.cf:after{
+  content:"";
+  display: table;
+}
+.cf:after{
+  clear:both;
+}
